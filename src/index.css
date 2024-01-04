@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* body {
+  font-family: helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  max-width: 768px;
+  margin: 0 auto; /* centers the content horizontally */
+  justify-content: center; /* centers content along the main axis (horizontally) */
+  align-items: center; /* centers content along the cross axis (vertically) */
+  /* height: 100vh; sets the minimum height of the body to 100% of the viewport height */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  /* box-shadow: 3px 3px 3px grey; */
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #171717;
+  /* max-width: 250px; */
+  /* display: inline-block; */
+}
+.card {
+  /* border: 1px solid white; */
+  border-radius: 10px;
+  /* box-shadow: 3px 3px 3px grey; */
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+  background-color: #171717;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+  body {
+    margin: 15px;
+  }
+
+  .header, .card {
+    /* box-shadow: 1px 1px 1px grey; Less shadow for a cleaner look */
+    padding: 10px; /* Less padding to fit small screens better */
+    margin: 5px; /* Less margin to utilize space better */
+  }
+
+  .card {
+    max-width: 50%; /* Cards take full width on small screens */
+    display: block; /* Stack cards vertically */
+  }
 }
