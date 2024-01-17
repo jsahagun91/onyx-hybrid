@@ -1,8 +1,12 @@
 // Kettlebells.js
 import React from 'react';
+import Carousel from './components/Carousel';
 
 function Kettlebells() {
-    return <div>This is the Kettlebells page</div>;
+    return(
+        <Carousel/>
+    )
+
 }
 
 export default Kettlebells;
